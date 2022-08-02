@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 
+
 const NavBar = () => {
   return (
 
@@ -7,7 +8,7 @@ const NavBar = () => {
         <div className="container">
             {/* <div class="app-logo">LabaWash</div> */}
             
-            <Link to="/"><img src="https://www.svgrepo.com/show/287692/laundry-washer.svg" alt="" style={{height: 50, width: 50}}/></Link>
+            <Link to="/"><img src="https://www.svgrepo.com/show/287692/laundry-washer.svg" alt="" style={{height: 40, width: 40}}/></Link>
 
             <ul class="nav">
                 <li>
