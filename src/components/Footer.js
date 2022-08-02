@@ -5,8 +5,8 @@ const Footer = () => {
 
     <footer className="footer">
       <div className="container">
+
         <div className="row">
-          
           {/* 1st Column */}
           <div className="footer-col-1">
             <h3>Download Our App</h3>
@@ -21,8 +21,7 @@ const Footer = () => {
           {/* 2nd Column */}
           <div className="footer-col-2">
             <img src="https://www.svgrepo.com/show/287692/laundry-washer.svg" alt="" style={{height: 50, width: 50}}/>
-            <p>Our purpose is to sustainably make the pleasure and 
-               benefits of sports accessible to many.
+            <p>Find your Laundry Shop or Use our App to optimize your Landry Shop Business with us
             </p>
           </div>
 
@@ -46,13 +45,13 @@ const Footer = () => {
               <li>Youtube</li>
             </ul>
           </div>
-
         </div>    
 
-
-
-
-
+        {/* Copyright Section */}
+        <hr />
+        <p className="copyright">
+          Copyright 2022 - LabaWash
+        </p>
       </div>
     </footer>
     
