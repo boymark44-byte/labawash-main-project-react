@@ -27,6 +27,8 @@ ul {
     list-style-type: none;
 }
 
+
+
 .container {
     max-width: 1100px;
     margin: 0 auto;
@@ -43,9 +45,21 @@ ul {
 .row{
     display: flex;
     align-items: center;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     justify-content: space-around;
 }
+
+.rating .fa{
+    color: #ff523b;
+}
+
+
+.col-3{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+
 
 
 
