@@ -5,6 +5,7 @@ import NavBar from './components/NavBar'
 import Header from './components/Header'
 import About from './components/About'
 import Testimonials from './components/Testimonials'
+import Brands from './components/Brands'
 import Footer from './components/Footer'
 
 
@@ -24,6 +25,9 @@ const App = () => {
       </Routes>
 
       <Testimonials></Testimonials>
+
+      <Brands></Brands>
+
       <Footer></Footer>
     </Router>
 
