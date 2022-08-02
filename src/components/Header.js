@@ -12,7 +12,6 @@ const Header = () => {
                     A Platform where you can find available laundry shops nearby.
                 </p>
             </div>
-            {/* <img src={"https://freesvg.org/img/liftarn-Washing-machine-white-stroke.png"}/> */}
             <img src={"https://www.svgrepo.com/show/287692/laundry-washer.svg"}/>
         </div>
     </header>

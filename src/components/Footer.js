@@ -26,7 +26,7 @@ const Footer = () => {
           <div className="footer-col-2">
             <Link to="/"><img src={labawashLogo} alt="labawash-logo" /></Link>
             <p>Find your Laundry Shop or Use our App 
-              to optimize your Landry Shop Business with us
+              to automate your Landry Shop Business with us.
             </p>
           </div>
 
