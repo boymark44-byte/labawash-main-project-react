@@ -11,7 +11,6 @@ body {
     font-size: 16px;
     line-height: 1.5;
     color: #333;
-    /* background: #a1c3ff;  */
     background: #fff; 
 }
 
@@ -141,8 +140,7 @@ ul {
 
 /* The Testimonial Section */
 .testimonial{
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 50px;
 }
 
 .testimonial .col-3{
@@ -157,7 +155,6 @@ ul {
     width: 50px;
     margin-top: 20px;
     border-radius: 50%;
-
 }
 
 .testimonial .col-3:hover{
@@ -166,7 +163,7 @@ ul {
 
 .fa.fa-quote-left{
     font-size: 34px;
-    color: #ff523b;
+    color: #0a51cc;
 }
 
 .col-3 p{
@@ -182,9 +179,28 @@ ul {
 }
 
 
+/* The Brands Section */
+.brands{
+    margin: 100px auto;
+}
+
+.col-5{
+    width: 160px;
+}
+
+.col-5 img{
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(100%);
+}
+
+.col-5 img:hover{
+    filter: grayscale(0);
+}
+
+
 
 /* The Footer Section */
-
 .footer{
     background: #3474e6;
     color: #fff;
@@ -258,7 +274,7 @@ li {
 
 
 
-
+/* Media Query */
 @media(max-width: 768px) {
     .header .container {
         flex-direction: column;
