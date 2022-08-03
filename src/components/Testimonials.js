@@ -7,6 +7,8 @@ const Testimonials = () => {
   return (
     <section className="testimonial">
         <div className="small-container">
+
+        <h2 class="title">Testimonials</h2>
           
             <div className="row">
 
