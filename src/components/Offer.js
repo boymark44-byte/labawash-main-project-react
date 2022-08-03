@@ -11,7 +11,7 @@ const Offer = () => {
                 <div className="col-2">
                     <p>Looking for Customers?</p>
                     
-                    <h1>Labawash Online Laundry Shop Finder.</h1>
+                    <h1>Labawash: An Online Laundry Shop Finder.</h1>
                     
                     <small>Automate your Laundry Shop business with us.<br />
                     </small>

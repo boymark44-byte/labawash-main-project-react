@@ -2,13 +2,15 @@ import { Link } from 'react-router-dom'
 
 
 const NavBar = () => {
+
+    const appLogo = require('../assets/labawash-logo.png')
   return (
 
     <nav className="navbar">
         <div className="container">
             {/* <div class="app-logo">LabaWash</div> */}
             
-            <Link to="/"><img src="https://www.svgrepo.com/show/287692/laundry-washer.svg" alt="" style={{height: 40, width: 40}}/></Link>
+            <Link to="/"><img src={appLogo} alt="" style={{height: 40, width: 40}}/></Link>
 
             <ul class="nav">
                 <li>
