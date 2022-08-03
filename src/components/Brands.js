@@ -6,6 +6,9 @@ const Brands = () => {
   return (
     <section class="brands">
         <div class="small-container">
+
+            <h2 class="title">Brands gamit pag-laba</h2>
+            
             <div class="row">
 
                 {/* <!-- 1st Brand --> */}
