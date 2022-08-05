@@ -22,6 +22,14 @@ const StyledNavBar = () => {
 
                 <li>
                     <NavLink 
+                        to="/laundry-shops"
+                        className={({ isActive }) => isActive ? 'link active' : 'link'}>
+                        Laundry Shops
+                    </NavLink>
+                </li>
+
+                <li>
+                    <NavLink 
                         to="/about"
                         className={({ isActive }) => isActive ? 'link active' : 'link'}>
                         About

@@ -7,6 +7,7 @@ import Error from './pages/Error'
 import SharedLayout from './pages/SharedLayout'
 import ContactUs from './pages/ContactUs'
 
+import LaundryShops from './laundry_shops/LaundryShops'
 const App = () => {
 
   return (
@@ -16,7 +17,8 @@ const App = () => {
           <Route index element={<Home></Home>}></Route>
           <Route path='/about' element={<About></About>}>About</Route>
           <Route path='/contact-us' element={<ContactUs></ContactUs>}>Contact Us</Route>
-
+          
+          <Route path='/laundry-shops' element={<LaundryShops>Laundry Shops</LaundryShops>}></Route>
           <Route path='*' element={<Error></Error>}>Error</Route>
         </Route>
       </Routes>
