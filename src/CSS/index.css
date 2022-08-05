@@ -12,6 +12,16 @@ body {
     line-height: 1.5;
     color: #333;
     background: #fff; 
+    
+    margin: 0;
+    display: grid;
+    grid-template-areas: 
+        "navbar"
+        "container"
+        "small-container"
+        "footer";
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
 }
 
 img {
@@ -32,6 +42,8 @@ ul {
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 30px;
+
+    grid-area: container;
 }
 
 .small-container{
@@ -39,6 +51,8 @@ ul {
     margin: auto;
     padding-left: 25px;
     padding-right: 25px;
+
+    grid-area: small-container;
 }
 
 .row{
@@ -78,7 +92,7 @@ ul {
     color: #fff;
     text-decoration: none;
     font-size: 18px;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 .navbar a:hover {
@@ -101,7 +115,14 @@ ul {
     margin-left: 20px;
 }
 
+.navbar ul li .link {
+    color: #fff;
+}
 
+.navbar ul li .active {
+    /* color: #0151cc; */
+    text-decoration: underline;
+}
 
 /* Header Section */
 .header {
@@ -164,12 +185,6 @@ ul {
     width: 100%;  
 }
 
-.small-container{
-    max-width: 1080px;
-    margin: auto;
-    padding-left: 25px;
-    padding-right: 25px;
-}
 
 
 /* The Featured Products Section */
@@ -329,6 +344,9 @@ small{
     color: #fff;
     font-size: 14px;
     padding: 60px 0 20px;
+    bottom: 0;
+
+    grid-area: footer;
 }
 
 .footer p{
