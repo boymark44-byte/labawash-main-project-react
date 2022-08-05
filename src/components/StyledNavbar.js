@@ -40,7 +40,7 @@ const StyledNavBar = () => {
                     <NavLink 
                         to="/sign-in-or-sign-up"
                         className={({ isActive }) => isActive ? 'link active' : 'link'}>
-                        Sign In or Sign Up
+                        Sign In
                     </NavLink>
                 </li>
             </ul>
