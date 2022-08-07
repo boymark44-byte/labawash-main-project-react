@@ -29,7 +29,7 @@ ul {
 
 
 .container {
-    max-width: 1100px;
+    max-width: 1300px;
     margin: 0 auto;
     padding: 0 30px;
 }
@@ -39,7 +39,6 @@ ul {
     margin: auto;
     padding-left: 25px;
     padding-right: 25px;
-    min-height: 100%;
 }
 
 .row{
@@ -396,6 +395,45 @@ li {
     text-align: center;
 }
 
+
+/* All Laundry Shops */
+
+/* The Dropdown  */
+.row-2{
+    justify-content: space-between;
+    margin: 100px auto 50px;
+}
+
+select{
+    border: 1px solid #3474e6;
+    padding: 5px;
+}
+
+select:focus{
+    outline: none;
+}
+
+
+/* The Pagination Button */
+.page-btn{
+    margin: 0 auto 80px;
+}
+
+.page-btn span{
+    display: inline-block;
+    border: 1px solid #3474e6;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.page-btn span:hover{
+    background: #3474e6;
+    color: #fff;
+}
 
 
 
