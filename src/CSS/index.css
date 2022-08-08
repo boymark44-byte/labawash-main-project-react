@@ -128,6 +128,7 @@ ul {
     max-width: 400px;
     padding: 30px;
     margin-top: 50px;
+    margin-right: 90px;
 }
 
 .header .container {
@@ -183,7 +184,8 @@ ul {
 }
 
 .col-4 img{
-    width: 100%;
+    width: 200px;
+    height: 150px;
 }
 
 .title{
@@ -436,6 +438,104 @@ select:focus{
 }
 
 
+/* ============ Account Page ======== */
+.account-page{
+    padding: 50px 0;
+    background: linear-gradient(to right bottom, rgb(85, 180, 202), rgb(38, 62, 199));
+}
+
+.form-container-register{
+    background: #fff;
+    width: 500px;
+    height: 550px;
+    position: relative;
+    text-align: center;
+    padding: 20px 20px;
+    margin: auto;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.form-container-login{
+    background: #fff;
+    width: 500px;
+    height: 350px;
+    position: relative;
+    text-align: center;
+    padding: 20px 20px;
+    margin: auto;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+
+.form-container span{
+    font-weight: bold;
+    padding: 0 10px;
+    color: #555;
+    cursor: pointer;
+    width: 100px;
+    display: inline-block;
+}
+
+.form-btn{
+    display: inline-block;
+}
+
+.form-container form{
+    max-width: 300px;
+    padding: 0 20px;
+    position: absolute;
+    top: 90px;
+    transition: transform 1s;
+}
+
+form label {
+    color: #000;
+    text-align: left;
+}
+
+form input{
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+}
+
+form .btn{
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+form .btn:focus{
+    outline: none;
+}
+
+#LoginForm{
+    left: 1px;
+}
+
+#RegForm{
+    left: 1px;
+}
+
+form a{
+    font-size: 12px;
+}
+
+#Indicator{
+    width: 100px;
+    border: none;
+    background: #3474e6;
+    height: 3px;
+    margin-top: 8px;
+    margin-bottom: 30px;
+    /* transform: translateX(100px); */
+    /* transition: transform 1s; */
+}
 
 /* Media Query */
 @media(max-width: 768px) {
