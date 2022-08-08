@@ -203,7 +203,7 @@ const LaundryShops = () => {
 
             {/* <!-- Product 10 --> */}
             <div className="col-4">
-                {/* <img src="images/product-10.jpg" alt="" > */}
+                <img src="images/product-10.jpg" alt="" />
                 <h4>Laundry Shop N</h4>
 
                 
