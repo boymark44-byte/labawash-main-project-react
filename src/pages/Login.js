@@ -1,8 +1,11 @@
 import { Link } from 'react-router-dom'
+import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
+
 
 const Login = () => {
-    
-  return (
+
+    return (
     <div className="account-page">
         <div className="container">
             <div className="row">
@@ -25,8 +28,9 @@ const Login = () => {
                             <label for='Password'>Password:</label>
                             <input type="password" placeholder="Password" name="password"/>
 
-                            <button type="submit" className="btn" style={{marginBottom: 20}}>Login</button>
-
+                            <button type="submit"  className="btn" style={{marginBottom: 20}}>Login</button>
+                            
+                            {/* onClick={} */}
                             
                         </form>
                         <Link to='#'>Forgot Password?</Link>
@@ -35,7 +39,7 @@ const Login = () => {
             </div>
         </div>
     </div>
-  )
+    )
 }
 
 export default Login
