@@ -39,8 +39,8 @@ const LaundryShops = () => {
                     <i className="fa fa-star"></i>
                     <i className="fa fa-star"></i>
                     <i className="fa fa-star"></i>
-                    <i className="fa fa-star-half-o"></i>
-                    <i className="fa fa-star-o"></i>
+                    <i class="fa fa-star-half-stroke"></i>
+                    <i class="fa fa-regular fa-star"></i>
                 </div>
 
                 
@@ -58,7 +58,7 @@ const LaundryShops = () => {
                     <i className="fa fa-star"></i>
                     <i className="fa fa-star"></i>
                     <i className="fa fa-star"></i>
-                    <i className="fa fa-star-o"></i>
+                    <i class="fa fa-regular fa-star"></i>
                 </div>
 
                 
@@ -75,8 +75,8 @@ const LaundryShops = () => {
                     <i className="fa fa-star"></i>
                     <i className="fa fa-star"></i>
                     <i className="fa fa-star"></i>
-                    <i className="fa fa-star-half-o"></i>
-                    <i className="fa fa-star-o"></i>
+                    <i class="fa fa-star-half-stroke"></i>
+                    <i class="fa fa-regular fa-star"></i>
                 </div>
 
                 
@@ -94,7 +94,7 @@ const LaundryShops = () => {
                     <i className="fa fa-star"></i>
                     <i className="fa fa-star"></i>
                     <i className="fa fa-star"></i>
-                    <i className="fa fa-star-o"></i>
+                    <i class="fa fa-regular fa-star"></i>
                 </div>
 
                 
@@ -116,8 +116,8 @@ const LaundryShops = () => {
                     <i className="fa fa-star"></i>
                     <i className="fa fa-star"></i>
                     <i className="fa fa-star"></i>
-                    <i className="fa fa-star-half-o"></i>
-                    <i className="fa fa-star-o"></i>
+                    <i class="fa fa-star-half-stroke"></i>
+                    <i class="fa fa-regular fa-star"></i>
                 </div>
 
                 
@@ -135,7 +135,7 @@ const LaundryShops = () => {
                     <i className="fa fa-star"></i>
                     <i className="fa fa-star"></i>
                     <i className="fa fa-star"></i>
-                    <i className="fa fa-star-o"></i>
+                    <i class="fa fa-regular fa-star"></i>
                 </div>
 
                 
@@ -152,8 +152,8 @@ const LaundryShops = () => {
                     <i className="fa fa-star"></i>
                     <i className="fa fa-star"></i>
                     <i className="fa fa-star"></i>
-                    <i className="fa fa-star-half-o"></i>
-                    <i className="fa fa-star-o"></i>
+                    <i class="fa fa-star-half-stroke"></i>
+                    <i class="fa fa-regular fa-star"></i>
                 </div>
 
                 
@@ -171,7 +171,7 @@ const LaundryShops = () => {
                     <i className="fa fa-star"></i>
                     <i className="fa fa-star"></i>
                     <i className="fa fa-star"></i>
-                    <i className="fa fa-star-o"></i>
+                    <i class="fa fa-regular fa-star"></i>
                 </div>
 
                 
@@ -193,8 +193,8 @@ const LaundryShops = () => {
                     <i className="fa fa-star"></i>
                     <i className="fa fa-star"></i>
                     <i className="fa fa-star"></i>
-                    <i className="fa fa-star-half-o"></i>
-                    <i className="fa fa-star-o"></i>
+                    <i class="fa fa-star-half-stroke"></i>
+                    <i class="fa fa-regular fa-star"></i>
                 </div>
 
                 
@@ -212,7 +212,7 @@ const LaundryShops = () => {
                     <i className="fa fa-star"></i>
                     <i className="fa fa-star"></i>
                     <i className="fa fa-star"></i>
-                    <i className="fa fa-star-o"></i>
+                    <i class="fa fa-regular fa-star"></i>
                 </div>
 
                 
@@ -229,8 +229,8 @@ const LaundryShops = () => {
                     <i className="fa fa-star"></i>
                     <i className="fa fa-star"></i>
                     <i className="fa fa-star"></i>
-                    <i className="fa fa-star-half-o"></i>
-                    <i className="fa fa-star-o"></i>
+                    <i class="fa fa-star-half-stroke"></i>
+                    <i class="fa fa-regular fa-star"></i>
                 </div>
 
                 
@@ -248,7 +248,7 @@ const LaundryShops = () => {
                     <i className="fa fa-star"></i>
                     <i className="fa fa-star"></i>
                     <i className="fa fa-star"></i>
-                    <i className="fa fa-star-o"></i>
+                    <i class="fa fa-regular fa-star"></i>
                 </div>
 
                 
@@ -270,8 +270,8 @@ const LaundryShops = () => {
                     <i className="fa fa-star"></i>
                     <i className="fa fa-star"></i>
                     <i className="fa fa-star"></i>
-                    <i className="fa fa-star-half-o"></i>
-                    <i className="fa fa-star-o"></i>
+                    <i class="fa fa-star-half-stroke"></i>
+                    <i class="fa fa-regular fa-star"></i>
                 </div>
 
                 
@@ -289,7 +289,7 @@ const LaundryShops = () => {
                     <i className="fa fa-star"></i>
                     <i className="fa fa-star"></i>
                     <i className="fa fa-star"></i>
-                    <i className="fa fa-star-o"></i>
+                    <i class="fa fa-regular fa-star"></i>
                 </div>
 
                 
@@ -306,8 +306,8 @@ const LaundryShops = () => {
                     <i className="fa fa-star"></i>
                     <i className="fa fa-star"></i>
                     <i className="fa fa-star"></i>
-                    <i className="fa fa-star-half-o"></i>
-                    <i className="fa fa-star-o"></i>
+                    <i class="fa fa-star-half-stroke"></i>
+                    <i class="fa fa-regular fa-star"></i>
                 </div>
 
                 
@@ -325,7 +325,7 @@ const LaundryShops = () => {
                     <i className="fa fa-star"></i>
                     <i className="fa fa-star"></i>
                     <i className="fa fa-star"></i>
-                    <i className="fa fa-star-o"></i>
+                    <i class="fa fa-regular fa-star"></i>
                 </div>
 
                 
