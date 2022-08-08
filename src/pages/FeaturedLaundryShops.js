@@ -17,8 +17,8 @@ const FeaturedLaundryShops = () => {
                   <i class="fa fa-star"></i>
                   <i class="fa fa-star"></i>
                   <i class="fa fa-star"></i>
-                  <i class="fa fa-star-half-o"></i>
-                  <i class="fa fa-star-o"></i>
+                  <i class="fa fa-star-half-stroke"></i>
+                  <i class="fa fa-regular fa-star"></i>
               </div>
 
               
@@ -36,7 +36,7 @@ const FeaturedLaundryShops = () => {
                   <i class="fa fa-star"></i>
                   <i class="fa fa-star"></i>
                   <i class="fa fa-star"></i>
-                  <i class="fa fa-star-o"></i>
+                  <i class="fa fa-star-half-stroke"></i>
               </div>
 
               
@@ -53,8 +53,8 @@ const FeaturedLaundryShops = () => {
                   <i class="fa fa-star"></i>
                   <i class="fa fa-star"></i>
                   <i class="fa fa-star"></i>
-                  <i class="fa fa-star-half-o"></i>
-                  <i class="fa fa-star-o"></i>
+                  <i class="fa fa-star-half-stroke"></i>
+                  <i class="fa fa-regular fa-star"></i>
               </div>
 
               
@@ -72,7 +72,7 @@ const FeaturedLaundryShops = () => {
                   <i class="fa fa-star"></i>
                   <i class="fa fa-star"></i>
                   <i class="fa fa-star"></i>
-                  <i class="fa fa-star-o"></i>
+                  <i class="fa fa-star-half-stroke"></i>
               </div>
 
               

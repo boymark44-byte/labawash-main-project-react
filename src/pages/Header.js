@@ -1,4 +1,4 @@
-import React from 'react'
+import { Link } from 'react-router-dom'
 
 
 const Header = () => {
@@ -11,10 +11,10 @@ const Header = () => {
                 <p> 
                     A Platform where you can find available laundry shops nearby.
                 </p>
-                <a href="/" className='btn'>Register Now &#8594;</a>
+                <Link to='/sign-up' className='btn'>Register Now &#8594;</Link>
             </div>
             
-            <img src={"https://media.istockphoto.com/photos/interior-of-a-modern-laundry-room-picture-id1173221762?k=20&m=1173221762&s=612x612&w=0&h=-CGXAzD0Ju7CL2L9p8bkHvhI6T1m7zx9nig_69Q5B0E="}/>
+            <img src={"https://images.pexels.com/photos/45980/pexels-photo-45980.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"}/>
         </div>
     </header>
   )

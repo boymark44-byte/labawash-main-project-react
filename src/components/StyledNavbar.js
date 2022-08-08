@@ -43,12 +43,20 @@ const StyledNavBar = () => {
                         Contact
                     </NavLink>
                 </li>
+                
+                <li>
+                    <NavLink 
+                        to="/sign-in"
+                        className={({ isActive }) => isActive ? 'link active' : 'link'}>
+                        Sign In
+                    </NavLink>
+                </li>
 
                 <li>
                     <NavLink 
-                        to="/sign-in-or-sign-up"
+                        to="/sign-up"
                         className={({ isActive }) => isActive ? 'link active' : 'link'}>
-                        Sign In
+                        Sign Up
                     </NavLink>
                 </li>
             </ul>
