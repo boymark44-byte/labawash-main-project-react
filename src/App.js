@@ -9,8 +9,9 @@ import ContactUs from "./pages/ContactUs";
 import Shops from "./laundry_shops/Shops";
 import data from "./data";
 import LaundryShops from "./laundry_shops/LaundryShops";
-import Detail from "./laundry_shops/Details";
+import Detail from "./laundry_shops/Shop";
 import ShopLayout from "./laundry_shops/ShopLayout";
+import Shop from "./laundry_shops/Shop";
 
 const App = () => {
   const cards = data.map((item) => {
@@ -48,7 +49,7 @@ const App = () => {
         </Route>
           <Route path="/shops" element={<ShopLayout></ShopLayout>}>
           <Route exact path="/shops" element={cards} />
-          <Route exact path="/shops/:id" element={<Detail />} />
+          <Route exact path="/shops/:id" element={<Shop />} />
         </Route>
       </Routes>
     </Router>

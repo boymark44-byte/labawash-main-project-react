@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import data from "../data";
 
-const Detail = () => {
+const Shop = () => {
   const { id } = useParams();
 
   console.log(data[id]);
@@ -41,4 +41,4 @@ const Detail = () => {
   );
 };
 
-export default Detail;
+export default Shop;
