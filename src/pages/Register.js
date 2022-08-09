@@ -1,7 +1,38 @@
+import axios from 'axios'
+import { useState, useEffect} from 'react'
+
 
 
 const Register = () => {
-  return (
+
+    const [ username, setUsername ] = useState('')
+    const [ name, setName ] = useState('')
+    const [ email, setEmail ] = useState('')
+    const [ password, setPassword ] = useState('')
+    const [ user, setUser ] = useState('') 
+    const [ customer, setCustomers ] = useState([])
+
+
+    const client = axios.client({
+        baseURL: "http://labawash-main.com.ph"
+    })
+
+
+    useEffect(() => {
+        const fetchCustomer = async () => {
+            try {
+                let response = await client.get('customers')
+                setCustomers(response.data)
+            }
+            catch (error) {
+                console.log(error)
+            }
+        }
+    })
+
+
+
+    return (
     <div className="account-page">
         <div className="container">
             <div className="row">
@@ -39,7 +70,7 @@ const Register = () => {
             </div>
         </div>
     </div>
-  )
+    )
 }
 
 export default Register
