@@ -22,7 +22,7 @@ const StyledNavBar = () => {
 
                 <li>
                     <NavLink 
-                        to="/laundry-shops"
+                        to="/shops"
                         className={({ isActive }) => isActive ? 'link active' : 'link'}>
                         Laundry Shops
                     </NavLink>
