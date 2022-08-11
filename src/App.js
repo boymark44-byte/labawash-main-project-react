@@ -11,8 +11,6 @@ import LaundryShops from './laundry_shops/LaundryShops'
 import Login from './pages/Login'
 import Register from './pages/Register'
 
-import Shop from './laundry_shops/ShopOld'
-
 import ShopLayout from './laundry_shops/ShopLayout'
 import useFetch from './laundry_shops/useFetch';
 import Shops from './laundry_shops/Shops';
