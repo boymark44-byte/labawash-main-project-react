@@ -19,10 +19,17 @@ import Shops from './laundry_shops/Shops';
 import ShopHome from './laundry_shops/ShopHome';
 import Detail from './laundry_shops/Details';
 
+
+import ProtectedRoutes from './pages/ProtectedRoutes';
+import Dashboard from './pages/Dashboard';
+
+
 const App = () => {
 
   const {data:shops, isPending, error} = useFetch('http://127.0.0.1:8000/api/shops')
 
+  const [ user, setUser ] = useState('')
+  
   return (
     <Router>
       <Routes>
@@ -30,9 +37,23 @@ const App = () => {
           <Route index element={<Home></Home>}></Route>
           <Route path='/about' element={<About></About>}>About</Route>
           <Route path='/contact-us' element={<ContactUs></ContactUs>}>Contact Us</Route>
-          <Route path='/sign-in' element={<Login></Login>}></Route>
+          {/* <Route path='/sign-in' element={<Login setUser={setUser}></Login>}></Route> */}
           <Route path='/sign-up' element={<Register></Register>}></Route>
-          <Route path='/laundry-shops' element={<LaundryShops>Laundry Shops</LaundryShops>}></Route>
+          {/* <Route path='/laundry-shops' element={<LaundryShops>Laundry Shops</LaundryShops>}></Route> */}
+          
+          
+          {/* Protected Route */}
+          <Route path='/sign-in' element={<Login setUser={setUser}></Login>}></Route>
+          <Route
+            path='dashboard'
+            element={
+              <ProtectedRoutes user={user}>
+                <Dashboard user={user}></Dashboard>
+              </ProtectedRoutes>
+            }
+          ></Route>
+          
+          
           <Route path='*' element={<Error></Error>}>Error</Route>
         </Route>
         <Route path="/shops" element={<ShopLayout></ShopLayout>}>
