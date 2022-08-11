@@ -15,7 +15,7 @@ const useFetch = (url) => {
       }
       return response.json()
     }).then((data)=>{
-      setData(data.shops)
+      setData(data)
       setIsPending(false)
       setError(null)
     })

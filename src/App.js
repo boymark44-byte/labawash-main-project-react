@@ -16,6 +16,7 @@ import Shop from './laundry_shops/Shop'
 import ShopLayout from './laundry_shops/ShopLayout'
 import useFetch from './laundry_shops/useFetch';
 import Shops from './laundry_shops/Shops';
+import ShopHome from './laundry_shops/ShopHome';
 
 const App = () => {
 
@@ -34,7 +35,7 @@ const App = () => {
           <Route path='*' element={<Error></Error>}>Error</Route>
         </Route>
         <Route path="/shops" element={<ShopLayout></ShopLayout>}>
-        <Route exact path="/shops" element={ shops && <Shops blogs={shops} />} />
+        <Route exact path="/shops" element={ <ShopHome />} />
           {/* { error && <div>{error}</div> }
           {isPending && <div>Loading...</div>} */}
           {/* <Route exact path="/shops/:id" element={<Shop />} /> */}
