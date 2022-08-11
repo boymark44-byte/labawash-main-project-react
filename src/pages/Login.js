@@ -1,10 +1,12 @@
 import { Link, useNavigate } from 'react-router-dom'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 
-const Login = () => {
+const Login = ({ setUser }) => {
 
     const [ email, setEmail ] = useState('')
     const [ password, setPassword ] = useState('')
+
+    const navigate = useNavigate()
     
     const loginUser = async (email, password) => {
         await fetch('http://labawash-main.com.ph/users/auth', {
@@ -30,7 +32,10 @@ const Login = () => {
     const handleSubmit = (e) => {
         e.preventDefault()
         
-        loginUser(email, password)
+        if (!email || !password) return
+        loginUser( { email: email, password: password })
+
+        navigate('/dashboard')
     }
 
 
