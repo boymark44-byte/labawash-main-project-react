@@ -2,6 +2,8 @@ import './Shop.css'
 import { Link } from "react-router-dom";
 
 const Shops = ({ blogs, handleDelete }) => {
+
+  console.log(blogs[0])
   return (
     <div className="shop--list">
       {blogs.map((blog) => (
@@ -14,7 +16,9 @@ const Shops = ({ blogs, handleDelete }) => {
           <div className="card">
             {/* <Link to={`/shops/${blog.id}`}> */}
             {/* </Link> */}
-          <img src={blog.image} className="card--image" alt="" />
+            <Link to={`/shops/${blog.id}`}>
+              <img src={blog.image} className="card--image" alt="" />
+            </Link>
             <div className="card--stats">
               {/* <img src="./images/star.png" className="card--star" /> */}
               {/* <span>{blog.rating}</span> */}

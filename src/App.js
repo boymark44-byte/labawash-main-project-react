@@ -11,12 +11,13 @@ import LaundryShops from './laundry_shops/LaundryShops'
 import Login from './pages/Login'
 import Register from './pages/Register'
 
-import Shop from './laundry_shops/Shop'
+import Shop from './laundry_shops/ShopOld'
 
 import ShopLayout from './laundry_shops/ShopLayout'
 import useFetch from './laundry_shops/useFetch';
 import Shops from './laundry_shops/Shops';
 import ShopHome from './laundry_shops/ShopHome';
+import Detail from './laundry_shops/Details';
 
 const App = () => {
 
@@ -36,6 +37,7 @@ const App = () => {
         </Route>
         <Route path="/shops" element={<ShopLayout></ShopLayout>}>
         <Route exact path="/shops" element={ <ShopHome />} />
+        <Route path="/shops/:id" element={<Detail />} />
           {/* { error && <div>{error}</div> }
           {isPending && <div>Loading...</div>} */}
           {/* <Route exact path="/shops/:id" element={<Shop />} /> */}
