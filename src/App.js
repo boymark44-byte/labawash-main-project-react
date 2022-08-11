@@ -10,26 +10,16 @@ import ContactUs from './pages/ContactUs'
 import LaundryShops from './laundry_shops/LaundryShops'
 import Login from './pages/Login'
 import Register from './pages/Register'
-import data from './data'
+
 import Shop from './laundry_shops/Shop'
-import Shops from './laundry_shops/Shops'
+
 import ShopLayout from './laundry_shops/ShopLayout'
+import useFetch from './laundry_shops/useFetch';
+import Shops from './laundry_shops/Shops';
 
 const App = () => {
 
-  const cards = data.map((item) => {
-    return (
-      <Shops
-        id={item.id}
-        img={item.coverImg}
-        rating={item.stats.rating}
-        reviewCount={item.stats.reviewCount}
-        location={item.location}
-        title={item.title}
-        price={item.price}
-      />
-    );
-  });
+  const {data:shops, isPending, error} = useFetch('http://127.0.0.1:8000/api/shops')
 
   return (
     <Router>
@@ -44,8 +34,10 @@ const App = () => {
           <Route path='*' element={<Error></Error>}>Error</Route>
         </Route>
         <Route path="/shops" element={<ShopLayout></ShopLayout>}>
-          <Route exact path="/shops" element={cards} />
-          <Route exact path="/shops/:id" element={<Shop />} />
+        <Route exact path="/shops" element={ shops && <Shops blogs={shops} />} />
+          {/* { error && <div>{error}</div> }
+          {isPending && <div>Loading...</div>} */}
+          {/* <Route exact path="/shops/:id" element={<Shop />} /> */}
         </Route>
       </Routes>
           
