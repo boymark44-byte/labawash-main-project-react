@@ -1,4 +1,5 @@
 import { useState} from 'react'
+import { useNavigate } from 'react-router-dom'
 
 
 const Register = () => {
@@ -7,6 +8,8 @@ const Register = () => {
     const [ email, setEmail ] = useState("")
     const [ password, setPassword ] = useState("")
     const [ password_confirmation, setPasswordConfirmation ] = useState("")
+
+    const navigate = useNavigate()
 
     const addUsers = async (username, name, email, password, password_confirmation) => {
         await fetch('http://labawash-main.com.ph/api/users', {
@@ -38,7 +41,8 @@ const Register = () => {
     const handleSubmit = (e) => {
         e.preventDefault()
         addUsers(username, name, email, password, password_confirmation)
-        console.log(addUsers)
+        
+        navigate('/sign-in')
     }
 
     return (
