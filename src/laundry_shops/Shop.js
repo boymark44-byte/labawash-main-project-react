@@ -1,44 +1,35 @@
-import { useParams } from "react-router-dom";
-import data from "../data";
+import { useParams } from 'react-router-dom';
+import './Shop.css'
 
-const Shop = () => {
-  const { id } = useParams();
 
-  console.log(data[id]);
-
-  // let {number, img, rating, reviewCount, location, title, price} = data[1-id]
-
-  let object = data[id - 1];
+const Shop = ({ blogs, handleDelete }) => {
+  const {id} = useParams();
+  //console.log(blogs)
+  console.log(id)
+  let object = blogs[id-1];
+  //console.log(object)
+  //console.log(object.shop_name)
 
   return (
-    <div className="wrapper">
-      <div className="shop">
-        <img src={object.coverImg} className="shop-picture" />
-        <div className="shop-details">
-          <div className="shop-title">{object.title}</div>
-          <h4 className="shop-location">{object.location}</h4>
-          <p className="shop-description">{object.description}</p>
-          <div className="shop-rating">{object.stats.rating}</div>
-          <p>
-            <span className="shop-price">From ${object.price}</span> / load
-          </p>
-          <button className="shop-order">Place Order</button>
-        </div>
-      </div>
-    </div>
-    // <div className="card">
-    //   <img src={object.coverImg} className="card--image" />
-
-    //   <div className="card--stats">
-    //     {/* <img src="./images/star.png" className="card--star" /> */}
-    //     <span>{object.stats.rating}</span>
-    //     <span className="gray">({object.stats.reviewCount}) • </span>
-    //     <span className="gray">{object.location}</span>
-    //   </div>
-    //   <p>{object.title}</p>
-
-    // </div>
-  );
-};
-
+    <>
+      <div className="shop--details">
+            <div className="shop">
+                 <img src={object.image} className="shop-picture" alt=""/>
+                 <div className="shop-details">
+                   <div className="shop-title">{object.shop_name}</div>
+                   <h4 className="shop-location">{object.shop_address}</h4>
+                   <p className="shop-description">{object.description}</p>
+                   <p className="shop-fabcon">Price of Fabcon: ${object.fabcon}</p>
+                   <p className="shop-description">Price of Detergent: ${object.detergent}</p>
+                   <p>
+                     <span className="shop-price">From ${object.price}</span> {object.category}
+                   </p>
+                   <button className="shop-order">Place Order</button>
+                 </div>
+               </div>
+           </div>
+    </>
+    );
+}
+ 
 export default Shop;
